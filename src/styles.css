@@ -1,0 +1,114 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  h1 {
+    background-color: #242424;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  .movie-list {
+      border-collapse: collapse;
+      width: 100%;
+      max-width: 800px;
+      margin: 0 auto;
+      border: 1px solid #ddd;
+      background-color: white;
+    }
+    
+    .movie-list th,
+    .movie-list td {
+      padding: 10px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+    
+    .movie-list th {
+      background-color: #f2f2f2;
+      font-weight: bold;
+    }
+    
+    .movie-list td:hover {
+          background-color: #ddd;
+    }
+    
+    .genre{
+      display: flex;
+      background-color: #f2f2f2;
+      margin-bottom: 15px;
+      align-items: center;
+      justify-content: center;
+      padding: 10px;
+      border-bottom: 1px solid #ddd;
+      border-top: 1px solid #ddd;
+    }
+  
+  
+  button {
+    background-color: #242424;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    margin: 0 0.5rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  button:hover {
+    background-color: #555555;
+  }
+  
+  
+  
+  /* Small screens */
+  @media only screen and (max-width: 600px) {
+      .movie-list {
+        max-width: 100%;
+      }
+      h1 {
+          font-size: 2rem;
+        }
+        
+        .genre {
+          flex-wrap: wrap;
+          padding: 1rem;
+        }
+        
+    }
+    
+    /* Medium screens */
+    @media only screen and (min-width: 601px) and (max-width: 900px) {
+      .movie-list {
+        max-width: 600px;
+      }
+      h1 {
+          font-size: 2rem;
+        }
+        
+        .genre {
+          flex-wrap: wrap;
+          padding: 1rem;
+        }
+        
+    }
+    
+    /* Large screens */
+    @media only screen and (min-width: 901px) {
+      .movie-list {
+        max-width: 800px;
+      }
+      h1 {
+          font-size: 2rem;
+        }
+        
+        .genre {
+          flex-wrap: wrap;
+          padding: 1rem;
+        }
+        
+    }
